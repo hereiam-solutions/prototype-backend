@@ -8,7 +8,7 @@
         "dev": "nodemon --exec npm run restart",
         "restart": "rimraf build && npm run build && npm start",
         "start": "node build/index.js",
-        "test": "NODE_ENV=testing jest -i --forceExit --detectOpenHandles --silent --watchAll"
+        "lint": "eslint 'src/**/*.js'"
     },
     "repository": {
         "type": "git",
@@ -30,11 +30,9 @@
         "eslint-config-node": "^4.1.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-jsx-a11y": "^6.5.1",
         "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "eslint-plugin-react": "^7.29.4",
         "eslint-plugin-react-hooks": "^4.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
         "nodemon": "^2.0.15",
         "prettier": "^2.6.2",
         "rimraf": "^3.0.2"
